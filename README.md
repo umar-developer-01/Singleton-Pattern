@@ -1,5 +1,7 @@
 📈 Real-Time Stock Price Updates with Pub/Sub and Singleton Patterns
-By combining the Pub/Sub pattern with the Singleton pattern, we efficiently manage stock price subscriptions and updates for a large number of users. 🚀
+By combining the Pub/Sub pattern with the Singleton pattern, 
+
+we efficiently manage stock price subscriptions and updates for a large number of users. 🚀
 
 
 
@@ -24,31 +26,65 @@ Perfect for handling dynamic, fast-changing data like stock prices.
 User Subscriptions
 
 Users indicate their interest in specific stock prices. 📊
+
+
 Centralized PubSubManager
 
 The PubSubManager class tracks all user subscriptions. ✅
+
+
 Ensures only one instance handles the subscriptions (Singleton).
 Stock Price Updates
 
 When a stock price changes, the update is published. 🔄
+
+
 Subscribed users immediately receive updates via WebSocket connections. 🌐
+
+
 Real-Time Scalability
+
+
 
 This design allows handling thousands of users seamlessly, ensuring consistency and performance. 🌟
 
 
+
+
 🖼️ Visual Representation
+
+
 The attached image illustrates:
 
+
+
 How user interests are tracked
+
+
 How stock price updates flow through the system
+
+
 How updates are relayed to interested users in real time
+
+
 🚀 Why This Approach?
+
+
 Scalable: Handles a large user base effortlessly. 🌍
+
+
 Efficient: Centralized management avoids redundant subscriptions. ⚙️
+
+
 Consistent: Guarantees all users receive accurate, up-to-date information. 🔄
+
+
 🌟 Stay Ahead in Real-Time Stock Updates! 💼
+
+
 By using this architecture, your application is ready to handle dynamic user demands in a scalable and efficient manner. Let’s make stock price tracking smarter and faster! 🚀
+
+
 
 🐳 Setting Up Redis with Docker
 
