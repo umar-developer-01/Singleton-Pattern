@@ -1,5 +1,40 @@
-🚀 Singleton Pattern and Pub/Sub with Redis
-This project demonstrates the Singleton Pattern and Pub/Sub functionality using Redis. Follow the steps below to set up and run the project!
+📈 Real-Time Stock Price Updates with Pub/Sub and Singleton Patterns
+By combining the Pub/Sub pattern with the Singleton pattern, we efficiently manage stock price subscriptions and updates for a large number of users. 🚀
+
+🌟 Key Features
+🧩 Singleton Pattern
+Ensures there’s only one instance of the subscription manager in the application.
+Provides a centralized, consistent way to manage user subscriptions.
+🔔 Pub/Sub Pattern
+Enables real-time broadcasting of stock price updates to all interested users.
+Perfect for handling dynamic, fast-changing data like stock prices.
+🎯 How It Works
+User Subscriptions
+
+Users indicate their interest in specific stock prices. 📊
+Centralized PubSubManager
+
+The PubSubManager class tracks all user subscriptions. ✅
+Ensures only one instance handles the subscriptions (Singleton).
+Stock Price Updates
+
+When a stock price changes, the update is published. 🔄
+Subscribed users immediately receive updates via WebSocket connections. 🌐
+Real-Time Scalability
+
+This design allows handling thousands of users seamlessly, ensuring consistency and performance. 🌟
+🖼️ Visual Representation
+The attached image illustrates:
+
+How user interests are tracked
+How stock price updates flow through the system
+How updates are relayed to interested users in real time
+🚀 Why This Approach?
+Scalable: Handles a large user base effortlessly. 🌍
+Efficient: Centralized management avoids redundant subscriptions. ⚙️
+Consistent: Guarantees all users receive accurate, up-to-date information. 🔄
+🌟 Stay Ahead in Real-Time Stock Updates! 💼
+By using this architecture, your application is ready to handle dynamic user demands in a scalable and efficient manner. Let’s make stock price tracking smarter and faster! 🚀
 
 🐳 Setting Up Redis with Docker
 
@@ -69,6 +104,3 @@ tsc -b
 node dist/index.js
 
 
-📚 About the Singleton Pattern and Pub/Sub
-Singleton Pattern ensures that there is only one instance of a class in the entire application lifecycle.
-Pub/Sub (Publisher/Subscriber) allows message broadcasting to multiple subscribers, making it ideal for real-time applications like notifications, chat systems, and mo
