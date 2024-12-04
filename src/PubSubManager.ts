@@ -64,4 +64,7 @@ export class PubSubManager {
 
 // The PubSubManager class will manage the subscriptions and notifications for stock price updates.
 // It will use Redis for the Pub/Sub mechanism and ensure that there is only one instance of the class (Singleton pattern).
-// By using the Pub/Sub pattern along with the Singleton pattern, you can efficiently manage stock price subscriptions and updates for a large number of users. The PubSubManager class ensures that there is only one instance managing the subscriptions, and it relays updates to the appropriate WebSocket connections. This approach ensures scalability and consistency in handling real-time stock price updates. The attached image visually represents the flow of information in this system, showing how user interests are tracked and how updates are relayed to interested users.
+// By using the Pub/Sub pattern along with the Singleton pattern, you can efficiently manage stock price subscriptions 
+// and updates for a large number of users. 
+//The PubSubManager class ensures that there is only one instance managing the subscriptions, 
+//and it relays updates to the appropriate WebSocket connections. This approach ensures scalability and consistency in handling real-time stock price updates. 
