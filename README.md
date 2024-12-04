@@ -1,4 +1,4 @@
-# Singleton-Pattern
+# Singleton-Pattern & Pub Sub 
 
 1. docker run -d -p 6379:6379 redis
 
