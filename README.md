@@ -1,13 +1,25 @@
 📈 Real-Time Stock Price Updates with Pub/Sub and Singleton Patterns
 By combining the Pub/Sub pattern with the Singleton pattern, we efficiently manage stock price subscriptions and updates for a large number of users. 🚀
 
+
+
 🌟 Key Features
 🧩 Singleton Pattern
 Ensures there’s only one instance of the subscription manager in the application.
+
+
 Provides a centralized, consistent way to manage user subscriptions.
+
+
 🔔 Pub/Sub Pattern
+
+
 Enables real-time broadcasting of stock price updates to all interested users.
+
+
 Perfect for handling dynamic, fast-changing data like stock prices.
+
+
 🎯 How It Works
 User Subscriptions
 
@@ -23,6 +35,8 @@ Subscribed users immediately receive updates via WebSocket connections. 🌐
 Real-Time Scalability
 
 This design allows handling thousands of users seamlessly, ensuring consistency and performance. 🌟
+
+
 🖼️ Visual Representation
 The attached image illustrates:
 
